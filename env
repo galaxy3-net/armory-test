@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+#
+#  Run this script with the following command.
+#
+#    source <(curl -L -s https://armory.galaxy3.net/env)
+
+function g3run {
+  case "${1}" in
+
+    'hostname') hostname
+       ;;
+    *) echo "${1} is not a runnable Galaxy3 command"
+       ;;
+  esac
+
+}
+
+function w12_d3_a1 {
+  bash <(curl -L -s https://armory.galaxy3.net/w12/d3/a/1/setup.sh)
+}
+
+function 03_Ansible_Playbooks {
+  w12_d3_a1
+}
+
